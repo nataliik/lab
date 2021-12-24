@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Объем шара</title>
+</head>
+<body>
+<h3>Вычисление объема шара</h3>
+<p>Введите радиус: </p>
+<input type="text" name="" id="diam" >
+<button id="go">Вычислить</button>
+
+<p>Объем шара: </p>
+<input type="text" name="" id="Area"><br><br>
+</body>
+<script type="text/javascript">
+
+let diam = document.getElementById('diam');
+let Area = document.getElementById('Area');
+
+go.addEventListener('click', function() {
+Area.value = Math.PI * Math.pow(diam.value, 3) * 4/3;
+});
+</script>
+</html>
